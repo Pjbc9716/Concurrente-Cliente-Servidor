@@ -1,2 +1,2 @@
-# Concurrente-Cliente-Servidor
+# Concurrente-Cliente/Servidor
 Repositorio de la clase de Concurrente
