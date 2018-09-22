@@ -1,2 +1,2 @@
-# Concurrente-Cliente/Servidor
-Repositorio de la clase de Concurrente
+# Client/Server Concurrency
+
