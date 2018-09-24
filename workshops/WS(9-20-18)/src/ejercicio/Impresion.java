@@ -10,14 +10,19 @@ package ejercicio;
  * @author PJ129
  */
 public enum Impresion {
-    IBN(10), IC(15);
+    IBN(10,0), IC(15,0);
     private final double cost;
+    private int cant;
 
-    private Impresion(double cost) {
+    private Impresion(double cost, int cant) {
         this.cost = cost;
+        this.cant = cant;
+    }
+    public void setCant (int cant){
+        this.cant = cant;
     }
 
-    public double getCost(double cant) {
+    public double getCost() {
         if (this == IBN) {
             return this.cost * cant;
         } else if (this == IC) {
@@ -26,5 +31,4 @@ public enum Impresion {
             return 0;
         }
     }
-
 }

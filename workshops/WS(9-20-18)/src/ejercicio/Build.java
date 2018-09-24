@@ -5,7 +5,6 @@
  */
 package ejercicio;
 
-import java.util.ArrayList;
 
 /**
  *
@@ -13,43 +12,39 @@ import java.util.ArrayList;
  */
 public class Build {
 
-    private final Impresion tipoImpresion;
-    private int cantidadImpresion =0;
-    private final Fotocopia tipoFotocopia; 
-    private  int cantidadFotocopia =0;
-    private final Levantado tipoLevantado;
-    private  int cantidadLevantado =0;
-    private final CorreccionOrtografica tipoCorreccion;
-    private  int cantidadCorreccion =0;
-    private final DisenoGrafico tipoDiseno;
-    private  int cantidadHoras =0;
-    private String tipoCliente ="";
-    private String diseno ="";
+    private final Impresion impresion;
+    private final Fotocopia fotocopia; 
+    private final Levantado levantado;
+    private final CorreccionOrtografica correccion;
+    private final DisenoGrafico diseno;
     
 
-    public Build(Impresion tipoImpresion, int cantidadImpresion , Fotocopia tipoFotocopia, int cantidadFotocopia , Levantado tipoLevantado, int cantidadLevantado ,CorreccionOrtografica tipoCorreccion, String tipoCliente ,int cantidadCorreccion ,DisenoGrafico tipoDiseno, int cantidadHoras, String diseno) {
-        this.tipoImpresion = tipoImpresion;
-        this.tipoFotocopia = tipoFotocopia;
-        this.tipoLevantado = tipoLevantado;
-        this.tipoCorreccion = tipoCorreccion;
-        this.tipoDiseno = tipoDiseno;
-        this.cantidadImpresion = cantidadImpresion;
-        this.cantidadFotocopia = cantidadFotocopia;
-        this.cantidadLevantado = cantidadLevantado;
-        this.cantidadCorreccion = cantidadCorreccion;
-        this.cantidadHoras = cantidadHoras; 
-        this.tipoCliente = tipoCliente;
+    public Build(Impresion impresion, Fotocopia fotocopia  , Levantado levantado, CorreccionOrtografica correccion, DisenoGrafico diseno) {
+        this.impresion = impresion;
+        this.fotocopia = fotocopia;
+        this.levantado = levantado;
+        this.correccion = correccion;
         this.diseno = diseno;
+    }
+    
+    public void setInfo (int cantImpresion, int cantFotocopia, int cantLevantado, int cantCorreccion, String tipoCorreccion, int cantHours, String tipoDiseno   ){
+        this.impresion.setCant(cantImpresion);
+        this.fotocopia.setCost(cantFotocopia);
+        this.levantado.setCant(cantLevantado);
+        this.correccion.setInfo(cantCorreccion,tipoCorreccion);
+        this.diseno.setInfo(cantHours, tipoDiseno);
+        
     }
 
     
     public String getPrintTotal() {
-        return "Total a pagar: "+ (this.tipoImpresion.getCost(this.cantidadImpresion)+ this.tipoFotocopia.getCost(this.cantidadFotocopia) + this.tipoLevantado.getCost(this.cantidadLevantado) + this.tipoCorreccion.getCost(this.tipoCliente, this.cantidadCorreccion)+this.tipoDiseno.getCost(this.cantidadHoras, this.diseno));
+    
+        return "Total a pagar: "+ (this.impresion.getCost()+ this.fotocopia.getCost() + this.levantado.getCost() + this.correccion.getCost()+this.diseno.getCost());
         
     }
     public String getPrintCost(){
-        return "Costo por impresion: "+this.tipoImpresion.getCost(this.cantidadImpresion)+"\nCostopor fotocopias: "+this.tipoFotocopia.getCost(this.cantidadFotocopia)+"\nCosto por Levantado: "+this.tipoLevantado.getCost(this.cantidadLevantado)
-                +"\nCosto por Correccion: "+this.tipoCorreccion.getCost(this.tipoCliente, this.cantidadCorreccion)+"\nCosto por Diseno: "+this.tipoDiseno.getCost(this.cantidadHoras, this.diseno);
+        return "Costo por impresion: "+this.impresion.getCost()+"\nCostopor fotocopias: "+this.fotocopia.getCost()+"\nCosto por Levantado: "+this.levantado.getCost()
+                +"\nCosto por Correccion: "+this.correccion.getCost()+"\nCosto por Diseno: "+this.diseno.getCost();
         
     }
 

@@ -18,7 +18,9 @@ public class Admi {
     
     public void newObject() {
 
-        build = new Build(Impresion.IBN, 0, Fotocopia.FC, 0, Levantado.MP, -1, CorreccionOrtografica.CO, "Estudiante", 0, DisenoGrafico.Diseno, 0, "Nuevo");
+        build = new Build(Impresion.IC, Fotocopia.FBN, Levantado.MP,CorreccionOrtografica.CO, DisenoGrafico.Diseno);
+        
+        build.setInfo(1, 1, 65, 434, "Estudiante", 500, "Usado");
 
         System.out.println(build.getPrintCost()+"\n--------------------\n"+build.getPrintTotal());
     }

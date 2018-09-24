@@ -10,14 +10,18 @@ package ejercicio;
  * @author PJ129
  */
 public enum Levantado {
-    PC(150), MP(100);
+    PC(150,0), MP(100,0);
     private final double cost;
+    private int cant;
 
-    private Levantado(double cost) {
+    private Levantado(double cost, int cant) {
         this.cost = cost;
+        this.cant = cant;
     }
-
-    public double getCost(int cant) {
+    public void setCant (int cant){
+        this.cant = cant;
+    }
+    public double getCost() {
         if (cant <500) {
             if (this == PC) {
                 return this.cost * cant;

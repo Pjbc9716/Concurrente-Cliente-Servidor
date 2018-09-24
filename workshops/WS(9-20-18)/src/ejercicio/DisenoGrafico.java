@@ -10,18 +10,27 @@ package ejercicio;
  * @author PJ129
  */
 public enum DisenoGrafico {
-    Diseno (20000);
+    Diseno (20000,0,"");
     private final double cost;
+    private int hour;
+    private String type;
 
-    private DisenoGrafico(double cost) {
+    private DisenoGrafico(double cost, int hour, String type) {
         this.cost = cost;
+        this.hour = hour;
+        this.type = type;
     }
     
-    public double getCost (int horas, String diseno ){
-        if (diseno.equals("Nuevo")){
-            return this.cost*horas;
-        }else if (diseno.equals("Usado")){
-            return (this.cost*horas-(5000*horas));
+    public void setInfo (int hour, String type){
+        this.hour = hour;
+        this.type = type;
+    }
+    
+    public double getCost ( ){
+        if (type.equals("Nuevo")){
+            return this.cost*hour;
+        }else if (type.equals("Usado")){
+            return (this.cost*hour-(5000*hour));
         }else{
             return 0;
         }
