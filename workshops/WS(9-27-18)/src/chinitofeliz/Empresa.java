@@ -60,7 +60,7 @@ public class Empresa extends Contact {
 
     @Override
     public String toString() {
-        return super.toString() + " direccion: " + this.direccion + " fax: " + this.fax;
+        return super.toString() + "\n*Direccion: " + this.direccion + "\n*Fax: " + this.fax ;
     }
 
  

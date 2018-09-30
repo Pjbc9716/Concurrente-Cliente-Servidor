@@ -49,7 +49,7 @@ public class Person extends Contact {
 
     @Override
     public String toString() {
-        return super.toString()+ " apellido: " + apellido ;
+        return super.toString()+ "\n*Apellido: " + apellido ;
     }
     
     

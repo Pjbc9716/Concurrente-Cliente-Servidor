@@ -57,7 +57,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" + "tipo=" + tipo + ", nombre=" + nombre + ", correo=" + correo + ", phone=" + phone + '}';
+        return "-> Contact info: " + "\n*Tipo de CLiente= " + tipo + "\n*Nombre=" + nombre + "\n*Correo=" + correo + "\n*Phone=" + phone + " ";
     }
 
 }
