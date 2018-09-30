@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ejercicio;
 
-/**
- *
- * @author PJ129
- */
+
 public class Ejercicio {
 
     /**
@@ -16,8 +9,8 @@ public class Ejercicio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Admi admin = new Admi();
-        admin.newObject();
+        Admi admin = new Admi();//instanciamos 
+        admin.newObject();//llamamos al objeto
     }
     
 }
