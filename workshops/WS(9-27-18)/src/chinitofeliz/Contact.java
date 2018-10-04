@@ -1,28 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chinitofeliz;
 
 /**
  *
  * @author ulacit
  */
+//class main 
 public class Contact {
-
+     //variables
     private String tipo;
     private String nombre;
     private String correo;
     private String phone;
-
+    // cosntructor
     public Contact(final String tipo,final String nombre, final String correo, final String phone) {
         this.nombre = nombre;
         this.correo = correo;
         this.phone = phone;
         this.tipo = tipo;
     }
-
+    //getter and setter
     public String getTipo() {
         return tipo;
     }
@@ -59,5 +56,7 @@ public class Contact {
     public String toString() {
         return "-> Contact info: " + "\n*Tipo de CLiente= " + tipo + "\n*Nombre=" + nombre + "\n*Correo=" + correo + "\n*Phone=" + phone + " ";
     }
-
+    
 }
+
+    
