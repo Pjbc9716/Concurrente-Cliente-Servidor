@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chinitofeliz;
 
-/**
- *
- * @author ulacit
- */
+
 public class Person extends Contact {
     private String apellido;
     private int cantBurrito;
@@ -47,8 +40,8 @@ public class Person extends Contact {
         this.apellido = apellido;
     }
 
-    @Override
-    public String toString() {
+    
+    public String toStringP() {
         return super.toString()+ "\n*Apellido: " + apellido ;
     }
     
@@ -57,3 +50,4 @@ public class Person extends Contact {
     
     
 }
+

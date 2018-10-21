@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chinitofeliz;
 
-/**
- *
- * @author ulacit
- */
 public class Burrito {
 
     private String salsa;
@@ -30,5 +22,12 @@ public class Burrito {
     public void setCant(int cant) {
         this.cant = cant;
     }
+
+   
+    public String toStringBurrito() {
+        return "Burrito ingredientes :" + "salsa = " + salsa + ", carne = " + carne + ", queso = " + queso + ", lechuga = " + lechuga + ", tortilla = " + tortilla + ", aguacate=" + aguacate + ", cant = " + cant+" Burrito(s)" ;
+    }
+    
+    
     
 }

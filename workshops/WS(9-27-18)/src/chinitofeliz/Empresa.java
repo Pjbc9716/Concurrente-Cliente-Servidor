@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chinitofeliz;
 
-/**
- *
- * @author ulacit
- */
+
 public class Empresa extends Contact {
 
     private String direccion;
@@ -58,11 +51,10 @@ public class Empresa extends Contact {
         this.fax = fax;
     }
 
-    @Override
-    public String toString() {
+    
+    public String toStringE() {
         return super.toString() + "\n*Direccion: " + this.direccion + "\n*Fax: " + this.fax ;
     }
 
- 
-           
+
 }
