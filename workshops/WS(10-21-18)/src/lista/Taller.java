@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taller;
+package lista;
 
 /**
  *
@@ -16,6 +16,8 @@ public class Taller {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Amazon amazon = new Amazon();
+        amazon.fillStock();
     }
-    
+
 }
