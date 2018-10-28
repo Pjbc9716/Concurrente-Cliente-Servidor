@@ -16,7 +16,6 @@ public class Amazon {
 
     private ArrayList<Usuario> userList = new ArrayList<Usuario>();
     private ArrayList<Inventario> stockList = new ArrayList<Inventario>();
-
     public void fillStock() {
         for (int i = 1; i <= 10; i++) {
             String code = "P00" + i;
@@ -55,14 +54,14 @@ public class Amazon {
         }
         fillCustomerList();
     }
-
+//Crea cliente
     public void createUserCart(String customerName) {
         for (int i = 0; i < this.stockList.size(); i++) {
             this.userList.get(this.getUserIndex(customerName)).getUserCart().add(new Carrito(this.stockList.get(i).getCodigo(), 0));
         }
         this.fillCart(customerName);
     }
-
+// llena la lista del cliente
     public void fillCustomerList() {
         this.userList.add(new Usuario("Pablo"));
         for (int i = 0; i < this.stockList.size(); i++) {
@@ -70,7 +69,7 @@ public class Amazon {
         }
         signIn();
     }
-
+// log in para el cliente
     public void signIn() {
         String customerName = JOptionPane.showInputDialog("Bienvenido\nIngrese el nombre del cliente\nPresione 2 para imprimir la informacion");
         if (customerName.equals("2")) {
@@ -89,7 +88,7 @@ public class Amazon {
             }
         }
     }
-
+//Agrega cliente
     public void addCustomer(String customerName) {
         this.userList.add(new Usuario(customerName));
         this.createUserCart(customerName);
@@ -104,7 +103,7 @@ public class Amazon {
         }
         return customerPosition;
     }
-
+//Agregamos los productos al carrito
     public void fillCart(String customerName) {
         boolean keepBuying = true;
         while (keepBuying) {
@@ -121,7 +120,7 @@ public class Amazon {
             }
         }
     }
-
+// imprime todo lo que el cliente lleva en el carrito
     public void printInfo() {
         System.out.println("Compras por cliente");
         for (int i = 0; i < this.userList.size(); i++) {
