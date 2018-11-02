@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lista;
 
 import java.util.ArrayList;
@@ -16,6 +12,7 @@ public class Amazon {
 
     private ArrayList<Usuario> userList = new ArrayList<Usuario>();
     private ArrayList<Inventario> stockList = new ArrayList<Inventario>();
+// inventario para llenar el carrito del cliente.
     public void fillStock() {
         for (int i = 1; i <= 10; i++) {
             String code = "P00" + i;

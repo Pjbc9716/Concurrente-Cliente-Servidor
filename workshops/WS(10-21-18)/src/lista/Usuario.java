@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lista;
 
 import java.util.ArrayList;
@@ -20,11 +16,12 @@ public class Usuario {
         this.userName = userName;
         this.userCart = new ArrayList<Carrito>();
     }
+    //Obtiene el nombre del usuario
 
     public String getUserName() {
         return userName;
     }
-
+// asigna el nombre del usuario
     public void setUserName(String userName) {
         this.userName = userName;
     }
