@@ -3,16 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/Usuario.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/Utils.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/SingleThread.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/Semillas.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/ThreadBase.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/Serpiente.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/SingleThreadSerpiente.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/ClsSync.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/Monitor.java</file>
-            <file>file:/C:/Users/Manuel/Desktop/clsSync/src/clssync/SingleThreadUsuario.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/ComplexThread.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/SingleThreadSemilla.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/SingleThreadUsuario.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/SingleThreadSerpiente.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/Monitor.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/SaveLogInfo.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/Semillas.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/ComplexSync.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/Utils.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/Serpiente.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/ThreadBase.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/SingleSync.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/Usuario.java</file>
+            <file>file:/C:/Users/Manuel/Desktop/Serpiente/src/clssync/ClsSync.java</file>
         </group>
     </open-files>
 </project-private>

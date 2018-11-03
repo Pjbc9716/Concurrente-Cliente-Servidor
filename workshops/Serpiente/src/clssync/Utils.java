@@ -5,18 +5,15 @@
  */
 package clssync;
 
-/**
- *
- * @author ulacit
- */
+
 public class Utils {
     
     public static String logs="";
     
     public static int[][]matriz= new int [10][10];//crea la matriz
-    public static int cantidadSemillasSerpientes=0;
-    public static int cantidadSemillasUsuario=0;
-    public static int cantidadSemillasGeneradas=0;
+    public static int cantidadSemillasSerpientes=0;//contador de las semillas generadas durante el juego
+    public static int cantidadSemillasUsuario=0;// contador de las semillas que se come el usuario
+    public static int cantidadSemillasGeneradas=0;//contador de las semillas que se come las serpientes.
     public static boolean juegoTerminado=false;
 
     public static String imprimirMatriz() {

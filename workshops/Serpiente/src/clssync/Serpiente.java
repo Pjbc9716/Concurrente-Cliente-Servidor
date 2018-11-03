@@ -73,7 +73,7 @@ public class Serpiente {
                         Utils.matriz[x][y] = 2;
                         paraAtras = false;
                     }
-                    if (Utils.matriz[x][y + 1] == 1) {//Si es =0 se mueve y es una semilla 
+                    if (Utils.matriz[x][y + 1] == 1) {//Si es =1 se come la semilla. 
                         Utils.matriz[x][y + 1] = 0;// Se comio la semilla. 
                         Utils.cantidadSemillasSerpientes++;
                     }
@@ -89,24 +89,24 @@ public class Serpiente {
                     int celdaAbajo = Utils.matriz[x + 1][y];
                     switch (celdaAbajo) {
 
-                        case 0:
+                        case 0:// los 0 son los espacios que estan libres, si se presenta un 0 indica que la serpiente se puede mover.
                             Utils.matriz[x + 1][y] = 2;
                             Utils.matriz[x][y] = 0;
                             this.x = x + 1;
                             paraAtras = true;
                             break;
-                        case 1:
+                        case 1:// el 1 en el juego son las semillas del juego
                             Utils.matriz[x + 1][y] = 0;// Se comio la semilla. 
                              {
                                 try {
-                                    Thread.sleep(10000);
+                                    Thread.sleep(10000); // En caso de que la serpiente se coma 1 semilla, debe de esperar 10 segundos
                                 } catch (InterruptedException ex) {
                                     //
                                 }
                             }
                             Utils.cantidadSemillasSerpientes++;
                             break;
-                        case 3:
+                        case 3:// el 3 es el usuario en el juego
                             Utils.juegoTerminado = true;
                             this.viva = false;
                             break;
@@ -128,7 +128,7 @@ public class Serpiente {
                             Utils.matriz[x][y - 1] = 0;// Se comio la semilla.
                              {
                                 try {
-                                    Thread.sleep(10000);
+                                    Thread.sleep(10000);// en caso de comer una semilla espera 10 segundos
                                 } catch (InterruptedException ex) {
                                     //
                                 }
@@ -136,18 +136,18 @@ public class Serpiente {
                             Utils.cantidadSemillasSerpientes++;
                             break;
                         case 3:
-                            Utils.juegoTerminado = true;
+                            Utils.juegoTerminado = true;// Termina el juego
                             this.viva=false;
                             break;
 
                     }
                 }
-                if (y == 0) {
+                if (y == 0) {//cuando llega a la celda 0 de las filas lo que hara es bajar una celda
                     int celdaAbajo = Utils.matriz[x + 1][y];
                     switch (celdaAbajo) {
 
-                        case 0:
-                            Utils.matriz[x + 1][y] = 2;
+                        case 0://si la celda es 0 la serpiente se mueve
+                            Utils.matriz[x + 1][y] = 2;//cada vez que se mueve la serpiente no deja un 2, sino que dejara en 0(vacias)
                             Utils.matriz[x][y] = 0;
                             this.x = x + 1;
                             paraAtras = false;
@@ -156,14 +156,14 @@ public class Serpiente {
                             Utils.matriz[x + 1][y] = 0;// Se comio la semilla. 
                              {
                                 try {
-                                    Thread.sleep(10000);
+                                    Thread.sleep(10000);//Espera 10 segundos
                                 } catch (InterruptedException ex) {
                                     //
                                 }
                             }
                             Utils.cantidadSemillasSerpientes++;
                             break;
-                        case 3:
+                        case 3://Termina el juego cuando la serpiente topa el usuario o el usuario se topa con la serpiente.
                             Utils.juegoTerminado = true;
                             break;
                     }
